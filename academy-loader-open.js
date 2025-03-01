@@ -4,13 +4,13 @@ document.write(`<!DOCTYPE html>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="EaglercraftL 1.9 Offline" />
-<meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8" />
-<title>EaglercraftL 1.9</title>
+<meta name="description" content="School work" />
+<meta name="keywords" content="home, school, schoolwork, homework, study" />
+<title>Home</title>
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="EaglercraftL 1.9" />
-<meta property="og:description" content="Play minecraft 1.8 in your browser" />
+<meta property="og:title" content="Home" />
+<meta property="og:description" content="School" />
 <script type="text/javascript">
 "use strict";
 const relayId = Math.floor(Math.random() * 3);
