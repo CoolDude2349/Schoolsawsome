@@ -38,7 +38,7 @@ document.write(`
 </head>
 <body>
     <form>
-        <label for="userInput">Enter URL:</label>
+        <label for="userInput">Enter URL (I recommend entering a url that doesn't use iframes to load their educational content):</label>
         <input type="text" id="userInput" name="userInput" placeholder="Enter here">
         <br>
         <button type="button" onclick="create()">Create</button>
