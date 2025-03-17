@@ -1,8 +1,5 @@
   const newTab = window.open("https://classroom.google.com", "_blank");
-    if (!newTab) {
-        alert("Popup blocked! Please allow popups for this site.");
-        return;
-    }
+    
 
     const doc = newTab.document;
     doc.open();
