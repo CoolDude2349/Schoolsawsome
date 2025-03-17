@@ -1,4 +1,20 @@
-  const newTab = window.open("https://classroom.google.com", "_blank");
+const button = document.createElement('button');
+button.textContent = 'Click Me';
+
+
+document.body.appendChild(button);
+
+
+
+
+
+button.addEventListener('click', loadWindow);
+
+function loadWindow() {
+    
+
+
+const newTab = window.open("https://classroom.google.com", "_blank");
     
 
     const doc = newTab.document;
@@ -84,3 +100,4 @@
     `);
    
 doc.close()
+}
