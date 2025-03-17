@@ -6,7 +6,7 @@ document.write(`
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Box to Iframe</title>
+    <title>Home</title>
     <script>
         function create() {
            
