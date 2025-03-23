@@ -59,6 +59,14 @@
             
             
         }
+        
+        .checkbox-container {
+        	display: block;
+  			text-align: center;
+  			width: 100%;
+           
+            font-size: 15px;
+        }
        
      
             </style>
@@ -67,7 +75,12 @@
 
 <h1>Supreme Math_</h1>
 <h2>Hi fellow human!</h2>
-<h4> More to be added</h4>
+<h4>More to be added</h4>
+
+<label id = "checkboxlabel" class = "checkbox-container">
+<input type = "checkbox" id = "checkbox" checked>
+Load in frame
+</label>
 
 <button name = "cleag1-8" class = "button"> Eag 1.8 </button>
 <button name = "eag1_9_4" class = "button"> Eag 1.9 </button>
@@ -106,6 +119,15 @@ if (db === 0) {
 db = 1
 }
 
+
+let doc = document
+
+
+const checkbox = document.getElementById("checkbox")
+
+if (checkbox.checked) {
+
+
 const buttons = document.querySelectorAll('button');
       buttons.forEach(button => {
         button.remove() })
@@ -136,6 +158,8 @@ const buttons = document.querySelectorAll('button');
 
          
             doc = iframe.contentWindow.document;
+            
+            }
             
       let fileName = event.target.name
 
