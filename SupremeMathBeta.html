@@ -5,11 +5,11 @@
   <head>
 
 <style>
-     
+    
          body {
             margin: 0;
             padding: 0;
-            background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDEzLTA4Ni1renBzNWVnaS5qcGc.jpg');
+            background-image: url('https://img.freepik.com/premium-vector/binary-code-background-blue-vector_88211-920.jpg');
             background-color: #000;
             background-size: cover;
             background-attachment: fixed;
@@ -19,6 +19,20 @@
             text-align: center;
         }
         
+        h1 {
+        
+        font-family: 'Fira Code', monospace;
+		font-size: 40px;
+        text-shadow: 
+                0 0 5px #3498db, 
+                0 0 10px #3498db, 
+                0 0 20px #3498db, 
+                0 0 40px #3498db;
+        
+         
+        }
+       
+        
         
         .button {
             display: inline-block;
@@ -26,9 +40,9 @@
             margin-left: 2px;
             margin-right: 2px;
             padding: 15px 25px;
-            background-color: blue;
+            background-color: rgba(0, 0, 252, 0.6);
             color: white;
-            border: 3px solid navy;
+            border: 3px solid black;
             border-radius: 25px;
          
             font-weight: 900;
@@ -38,25 +52,22 @@
             transition: all 0.3s ease;
            
            
-              font-size: 15px;
-              font-family: Verdana , sans-serif;
+              font-size: 18px;
+              font-family: 'Fira Code', monospace;
+
+              /* font-family: Verdana , sans-serif; */
             
             
         }
-        
-         
-
-        
-
-        
-
-       
-
        
      
             </style>
   </head>
 <body>
+
+<h1>Supreme Math_</h1>
+<h2>Hi fellow human!</h2>
+<h4> More to be added</h4>
 
 <button name = "cleag1-8" class = "button"> Eag 1.8 </button>
 <button name = "eag1_9_4" class = "button"> Eag 1.9 </button>
@@ -72,7 +83,7 @@
 <button name = "clsoccerrando" class = "button"> Soccer Rando </button>
 <button name = "clvolleyrando" class = "button"> Volley Rando </button>
 <button name = "clboxingrando" class = "button"> Boxing Rando </button>
-<button name = "territorial" class = "button"> Territorial Io (Singleplay only) </button>
+<button name = "territorial" class = "button"> Territorial I0 (Singleplay only) </button>
 <button name = "clslitherio" class = "button"> Slither </button>
 <button name = "climpossiblequiz" class = "button"> Impossible Quiz </button>
 <button name = "clpolytracksnow" class = "button"> Polytrack </button>
@@ -82,7 +93,8 @@
 <button name = "clpapasburger" class = "button"> Papa's Burgeria </button>
 <button name = "clpapaspancakeria" class = "button"> Papa's Pancakeria </button>
 <button name = "clpapaspastaria" class = "button"> Papa's Pastaria </button>
-
+<button name = "clsnowrider" class = "button"> Snow Rider </button>
+<button name = "clpaper" class = "button"> Paper I0 </button>
 
 <script>
 
@@ -98,6 +110,7 @@ const buttons = document.querySelectorAll('button');
       buttons.forEach(button => {
         button.remove() })
         document.head.innerHTML = ""
+         document.body.innerHTML = ""
        const iframe = document.createElement('iframe');
             iframe.style.width = '100%';
             iframe.style.height = '100vh'; 
