@@ -4,6 +4,19 @@
 
 <style>
      
+         body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDEzLTA4Ni1renBzNWVnaS5qcGc.jpg');
+            background-color: #000;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
         
         .button {
             display: inline-block;
@@ -13,19 +26,19 @@
             padding: 15px 25px;
             background-color: blue;
             color: white;
-            border: 3px solid black;
+            border: 3px solid navy;
             border-radius: 25px;
          
-            font-weight: 700;
-            font-family: Inter;
+            font-weight: 900;
+            
          
             cursor: pointer;
             transition: all 0.3s ease;
            
-            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-              font-size: 19px;
+           
+              font-size: 15px;
               font-family: Verdana , sans-serif;
-              font-color: red;
+            
             
         }
         
@@ -43,19 +56,16 @@
   </head>
 <body>
 
-
+<button name = "cleag1-8" class = "button"> Eag 1.8 </button>
 <button name = "eag1_9_4" class = "button"> Eag 1.9 </button>
-
 <button name = "cltimeshooter2" class = "button"> Time Sho(o)ter 2 </button>
-
-
-
-
-
-
-
-
-
+<button name = "clangrybirds" class = "button"> Angry birdys </button>
+<button name = "clbasketrando" class = "button"> Basket Rando </button>
+<button name = "clsoccerrando" class = "button"> Soccer Rando </button>
+<button name = "clvolleyrando" class = "button"> Volley Rando </button>
+<button name = "clboxingrando" class = "button"> Boxing Rando </button>
+<button name = "territorial" class = "button"> Territorial Io (Singleplay only) </button>
+<button name = "climpossiblequiz" class = "button"> Impossible Quiz </button>
 
 
 
@@ -72,6 +82,7 @@ db = 1
 const buttons = document.querySelectorAll('button');
       buttons.forEach(button => {
         button.remove() })
+        document.head.innerHTML = ""
        const iframe = document.createElement('iframe');
             iframe.style.width = '100%';
             iframe.style.height = '100vh'; 
@@ -79,6 +90,9 @@ const buttons = document.querySelectorAll('button');
 
            
             document.body.appendChild(iframe);
+            iframe.focus()
+            
+           // iframe.scrolling = "no"
             
              document.body.style.overflow = 'hidden';
 
@@ -90,7 +104,7 @@ const buttons = document.querySelectorAll('button');
                 behavior: 'smooth'  
             });
              
-             iframe.scrolling = "no"
+           
 
          
             doc = iframe.contentWindow.document;
@@ -113,7 +127,7 @@ fetch(url)
 
     }
 
-    // Adding event listeners to buttons
+   
     window.onload = function() {
       const buttons = document.querySelectorAll('button');
       buttons.forEach(button => {
