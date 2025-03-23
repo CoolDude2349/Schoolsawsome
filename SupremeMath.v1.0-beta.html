@@ -95,6 +95,9 @@
 Load in frame
 </label>
 
+<div id="button-container">
+
+
 <button name = "cleag1-8" class = "button"> Eag 1.8 </button>
 <button name = "eag1_9_4" class = "button"> Eag 1.9 </button>
 <button name = "cl1v1maybeidk" class = "button"> 1v1 </button>
@@ -122,6 +125,10 @@ Load in frame
 <button name = "clsnowrider" class = "button"> Snow Rider </button>
 <button name = "clpaper" class = "button"> Paper I0 </button>
 <button name = "cldrivemad" class = "button"> Drive Mad </button>
+
+
+</div>
+
 
 <script>
 
@@ -200,6 +207,25 @@ fetch(url)
         button.addEventListener('click', loadResource);
       });
     };
+    
+    
+ let container = document.getElementById("button-container");
+      let divButtons = Array.from(container.getElementsByTagName("button"));
+      
+      divButtons.sort((a, b) => {
+        
+        let textA = a.textContent.trim()[0].toUpperCase();
+        let textB = b.textContent.trim()[0].toUpperCase();
+        
+     
+        return textA.localeCompare(textB);
+      });
+
+     
+      container.innerHTML = "";
+      divButtons.forEach(button => {
+        container.appendChild(button);
+      });
 </script>
   
 </body>
