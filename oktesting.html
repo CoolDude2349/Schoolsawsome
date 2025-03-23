@@ -46,7 +46,7 @@
 
 <button name = "eag1_9_4" class = "button"> Eag 1.9 </button>
 
-<button name = "eag1_9_4" class = "button"> Eag 1.9 </button>
+<button name = "cltimeshooter2" class = "button"> Time Sho(o)ter 2 </button>
 
 
 
@@ -72,7 +72,29 @@ db = 1
 const buttons = document.querySelectorAll('button');
       buttons.forEach(button => {
         button.remove() })
-      
+       const iframe = document.createElement('iframe');
+            iframe.style.width = '100%';
+            iframe.style.height = '100vh'; 
+            iframe.style.border = 'none'; 
+
+           
+            document.body.appendChild(iframe);
+            
+             document.body.style.overflow = 'hidden';
+
+                         var iframePosition = iframe.getBoundingClientRect().top + window.scrollY;
+            
+            
+            window.scrollTo({
+                top: iframePosition,
+                behavior: 'smooth'  
+            });
+             
+             iframe.scrolling = "no"
+
+         
+            doc = iframe.contentWindow.document;
+            
       let fileName = event.target.name
 
 let url = "https://cdn.jsdelivr.net/gh/CoolDude2349/Schoolsawsome@main/" + fileName + ".html"
@@ -81,7 +103,7 @@ console.log(url)
 fetch(url)
             .then(response => response.text())
             .then(html => {
-                const doc = document
+                
                 doc.open();
                 doc.write(html);
                 doc.close();
