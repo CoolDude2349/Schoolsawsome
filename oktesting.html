@@ -1,0 +1,106 @@
+<html>
+
+  <head>
+
+<style>
+     
+        
+        .button {
+            display: inline-block;
+            margin-top: 40px;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding: 15px 25px;
+            background-color: blue;
+            color: white;
+            border: 3px solid black;
+            border-radius: 25px;
+         
+            font-weight: 700;
+            font-family: Inter;
+         
+            cursor: pointer;
+            transition: all 0.3s ease;
+           
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+              font-size: 19px;
+              font-family: Verdana , sans-serif;
+              font-color: red;
+            
+        }
+        
+         
+
+        
+
+        
+
+       
+
+       
+     
+            </style>
+  </head>
+<body>
+
+
+<button name = "eag1_9_4" class = "button"> Eag 1.9 </button>
+
+<button name = "eag1_9_4" class = "button"> Eag 1.9 </button>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+let db = 0
+
+function loadResource(event) {
+
+if (db === 0) {
+db = 1
+}
+
+const buttons = document.querySelectorAll('button');
+      buttons.forEach(button => {
+        button.remove() })
+      
+      let fileName = event.target.name
+
+let url = "https://cdn.jsdelivr.net/gh/CoolDude2349/Schoolsawsome@main/" + fileName + ".html"
+console.log(url)
+
+fetch(url)
+            .then(response => response.text())
+            .then(html => {
+                const doc = document
+                doc.open();
+                doc.write(html);
+                doc.close();
+            })
+            .catch(error => console.error("Error loading HTML:", error));
+
+
+    }
+
+    // Adding event listeners to buttons
+    window.onload = function() {
+      const buttons = document.querySelectorAll('button');
+      buttons.forEach(button => {
+        button.addEventListener('click', loadResource);
+      });
+    };
+</script>
+  
+</body>
+
+  
+</html>
