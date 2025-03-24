@@ -139,6 +139,17 @@ Load in frame
 <button name = "clslope" class = "button"> Slope</button>
 <button name = "clbasketstar" class = "button"> Basket Star</button>
 <button name = "clbitplanes" class = "button"> Bit Planes</button>
+<button name = "clgeometry" class = "button"> Geometry</button>
+<button name = "clgetaway" class = "button"> Getaway Sh0(o}tout</button>
+<button name = "clhole" class = "button"> Hole I0</button>
+<button name = "clmotox3m" class = "button"> Moto x3m</button>
+<button name = "clmotox3m2" class = "button"> Moto x3m 2</button>
+<button name = "clmotox3m3" class = "button"> Moto x3m 3</button>
+<button name = "clmotox3mpoolparty" class = "button"> Moto x3m Pool Party (may not work)</button>
+<button name = "clmotox3mspookyland" class = "button"> Moto x3m Spooky Land</button>
+<button name = "clmotox3mwinter" class = "button"> Moto x3m Winter</button>
+<button name = "climpossiblequiz2" class = "button"> Impossible Quiz 2</button>
+
 </div>
 
 
@@ -197,7 +208,7 @@ const buttons = document.querySelectorAll('button');
       let fileName = event.target.name
 
 let url = "https://cdn.jsdelivr.net/gh/CoolDude2349/Schoolsawsome@main/" + fileName + ".html"
-console.log(url)
+
 
 fetch(url)
             .then(response => response.text())
