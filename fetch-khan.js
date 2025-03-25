@@ -24,6 +24,15 @@
             iframe.style.border = 'none';
             document.body.appendChild(iframe);
                     iframe.focus()
+ document.body.style.overflow = 'hidden';
+
+                         var iframePosition = iframe.getBoundingClientRect().top + window.scrollY;
+            
+            
+            window.scrollTo({
+                top: iframePosition,
+                behavior: 'smooth'  
+            });
        
         function fetchAndDisplayContent() {
           
@@ -32,7 +41,7 @@
                 alert('enter a URL')
                 return;
             }
-          document.body.innerHTML = ""
+          
             fetch(url)
                 .then(response => {
                     if (!response.ok) {
