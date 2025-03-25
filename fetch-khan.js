@@ -23,15 +23,16 @@
             iframe.style.height = '100vh';
             iframe.style.border = 'none';
             document.body.appendChild(iframe);
-
+                    iframe.focus()
        
         function fetchAndDisplayContent() {
+          
             const url = input.value;
             if (!url) {
                 alert('enter a URL')
                 return;
             }
-
+          document.body.innerHTML = ""
             fetch(url)
                 .then(response => {
                     if (!response.ok) {
@@ -40,6 +41,7 @@
                     return response.text();
                 })
                 .then(data => {
+                    
                    let doc = iframe.contentWindow.document
                     doc.open();
                     doc.write(data);
