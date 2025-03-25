@@ -24,15 +24,7 @@
             iframe.style.border = 'none';
             document.body.appendChild(iframe);
                     iframe.focus()
- document.body.style.overflow = 'hidden';
-
-                         var iframePosition = iframe.getBoundingClientRect().top + window.scrollY;
-            
-            
-            window.scrollTo({
-                top: iframePosition,
-                behavior: 'smooth'  
-            });
+ 
        
         function fetchAndDisplayContent() {
           
@@ -59,6 +51,17 @@
                 .catch(error => {
                     alert('Error fetching content: ' + error.message);
                 });
+
+
+                    document.body.style.overflow = 'hidden';
+
+                         var iframePosition = iframe.getBoundingClientRect().top + window.scrollY;
+            
+            
+            window.scrollTo({
+                top: iframePosition,
+                behavior: 'smooth'  
+            });
         }
 
        
