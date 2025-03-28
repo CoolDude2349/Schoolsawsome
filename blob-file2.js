@@ -1,5 +1,5 @@
 const button = document.createElement('button');
-button.textContent = 'Open Blob URL';
+button.textContent = 'Open it';
 
 
 document.body.appendChild(button);
