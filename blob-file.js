@@ -1,4 +1,8 @@
- async function openFile() {
+let button = document.createElement("button")
+button.innerText = "Load It"
+button.onclick = openFile
+document.body.appendChild(button)
+async function openFile() {
             try {
                 const [fileHandle] = await window.showOpenFilePicker();
                 const file = await fileHandle.getFile();
@@ -8,5 +12,3 @@
                 console.error("Error:", error);
             }
         }
-
-        openFile();
