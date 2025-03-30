@@ -83,6 +83,15 @@
            
             font-size: 17px;
         }
+        
+           #button-count {
+            position: absolute;
+            left: 10px;
+            font-family: 'Fira Code', monospace;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 5px;
+        }
        
      
             </style>
@@ -93,6 +102,8 @@
 <h2>Hi fellow human!</h2>
 <h4>More to be added</h4>
 
+<div id="button-count">Educational Content: 0</div>
+
 <label id = "checkboxlabel" class = "checkbox-container">
 <input type = "checkbox" id = "checkbox" checked>
 Load in frame
@@ -100,7 +111,7 @@ Load in frame
 
 <div id="button-container">
 
-
+<button name = "cleag1.3" class = "button"> Eag 1.3 </button>
 <button name = "cleag1-8" class = "button"> Eag 1.8 </button>
 <button name = "eag1_9_4" class = "button"> Eag 1.9 </button>
 <button name = "cl1v1maybeidk" class = "button"> 1v1 </button>
@@ -161,10 +172,38 @@ Load in frame
 <button name = "cllearntofly2" class = "button">Learn to Fly  2</button>
 <button name = "cllearntofly3" class = "button">Learn to Fly 3</button>
 <button name = "clrun2" class = "button">Run 2</button>
+<button name = "clvex" class = "button">Vex</button>
+<button name = "clvex2" class = "button">Vex 2</button>
+<button name = "clvex3" class = "button">Vex 3</button>
+<button name = "clvex4" class = "button">Vex 4</button>
+<button name = "clvex5" class = "button">Vex 5</button>
+<button name = "clvex6" class = "button">Vex 6</button>
+<button name = "clvex7" class = "button">Vex 7</button>
+<button name = "clvex8" class = "button">Vex 8</button>
+<button name = "clretrobowl" class = "button">Retro Bowl</button>
+<button name = "clchess" class = "button">Chess</button>
+<button name = "cldogeminer" class = "button">Doge Miner</button>
+<button name = "cldogeminer2" class = "button">Doge Miner 2</button>
+<button name = "clfridaynightfunk" class = "button">Friday Night Funkin</button>
+<button name = "clFNAF" class = "button">FNAF</button>
+<button name = "clfunnysh2" class = "button">Funny Sho(o)ter 2</button>
+<button name = "clsnowballio" class = "button">Snowball I0</button>
+<button name = "clagariolite" class = "button">Agar I0</button>
+
 </div>
 
 
 <script>
+    
+    
+    
+function countButtons() {
+            const buttonCount = document.querySelectorAll('#button-container button').length;
+            document.getElementById('button-count').textContent = `Educational Content: ${buttonCount}`;
+        }
+
+        // Initial count
+        countButtons();
 
 let db = 0
 
