@@ -1,8 +1,4 @@
-<html>
 
-<body>
-
-<script>
 document.open()
 document.write(`
 
@@ -52,7 +48,7 @@ document.write(`
                 alert("Enter a valid URL.");
             }
         }
-    <\/script>
+    </script>
 </head>
 <body>
     <form>
@@ -68,6 +64,4 @@ document.write(`
 `)
 document.close()
 
-</script>
-</body>
-</html>
+
