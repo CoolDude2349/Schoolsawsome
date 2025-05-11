@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Custom PreHead code is injected here -->
 
 
 <head>
+    <base href = "https://cdn.jsdelivr.net/gh/cooldude2349/rerobolcolege@main/">
     <script src="/js/all.js"></script>
-    <base href="https://cdn.jsdelivr.net/gh/genizy/retro-bowl-college@main/">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -15,7 +16,8 @@
     <!-- Builtin injector for disabling cache -->
     <meta http-equiv="pragma" content="no-cache" />
 
-    
+    <!-- Set the title bar of the page -->
+  
 
     <!-- Custom PreStyle code is injected here -->
 
@@ -106,7 +108,7 @@
         <img src="html5game/splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen"
             style="display:none;" />
 
-        
+        <!-- Create the canvas element the game draws to -->
         <canvas id="canvas" width="853" height="480"
             style="position: absolute; top: 50%; left: 50%; bottom: -50%; right: -50%; transform: translate(-50%, -50%);">
             <p>Your browser doesn't support HTML5 canvas.</p>
@@ -116,7 +118,14 @@
     <!-- Run the game code -->
     <script type="text/javascript" src="html5game/RetroBowl.js"></script>
 
-   
+    <!-- Builtin injector for injecting runner path -->
+
+
+    <!-- NO POKI -->
+    <!-- <script>window.onload = GameMaker_Init;</script> -->
+
+    <!-- YES POKI -->
+    <!-- Poki start -->
     <script src="poki-sdk.js"></script>
     <script>(function () {
             function fin(ok) {
@@ -139,10 +148,13 @@
             });
         })();
     </script>
+    <!-- Poki end -->
+
+    <!-- Builtin injector for injecting google analytics code -->
 
 
 </body>
 
-
+<!-- Custom PostBody code is injected here -->
 
 </html>
